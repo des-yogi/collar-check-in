@@ -1,0 +1,22 @@
+<!--DEV
+@ @include('blocks/page-header/page-header.html')
+-->
+
+<header class="container  page-header">
+  <div class="page-header__inner">
+    @@include('../../blocks/logo/logo.html')
+
+    <div class="page-header__user-menu">
+      @@include('../../blocks/delivery-info/delivery-info.html')
+
+      @@include('../../blocks/hot-line-link/hot-line-link.html')
+
+      @@include('../../blocks/lang-switcher/lang-switcher.html')
+
+      <a href="#" class="btn  btn--red">
+        <span>Войти в аккаунт</span>
+      </a>
+    </div>
+
+  </div>
+</header>

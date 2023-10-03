@@ -1,0 +1,30 @@
+.hot-line-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  //text-align: right;
+  color: inherit;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  @media (min-width: $screen-md) {
+    align-items: initial;
+  }
+
+  &__text {
+    display: block;
+    font-size: $font-size-sm;
+    line-height: 1.15;
+    color: $text-color;
+  }
+
+  &__num {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

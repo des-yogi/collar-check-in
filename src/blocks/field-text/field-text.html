@@ -1,0 +1,18 @@
+<!--DEV
+@ @include('blocks/field-text/field-text.html', {
+  "type": "text",
+  "placeholder": "",
+  "name": "",
+  "imaskClass": ""
+})
+-->
+
+<label class="field-text">
+  <!-- <span class="field-text__name">Текст</span> -->
+  <span class="field-text__input-wrap">
+    <input class="field-text__input @@imaskClass" type="@@type" id="af_@@name" name="@@name" value="" placeholder="@@placeholder">
+    <span class="field-text__help-text error error_@@name">
+      <!-- [[+fi.error.@@name]] -->
+    </span>
+  </span>
+</label>

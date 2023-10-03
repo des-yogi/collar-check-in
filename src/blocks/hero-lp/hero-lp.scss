@@ -1,0 +1,107 @@
+.hero-lp {
+  padding-top: 40px;
+  //padding-bottom: 40px;
+  background-color: $main-color;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+
+  }
+
+  &__text-col {
+    @include col(xs, 12);
+    @include col(xl, 8);
+  }
+
+  &__form-col {
+    @include col(xs, 12);
+    @include col(xl, 4);
+    margin-bottom: 40px;
+  }
+
+  &__text {
+
+  }
+
+  &__caption {
+    font-size: 26px;
+    font-weight: 700;
+
+    @media (min-width: $screen-md) {
+      font-size: 56px;
+    }
+
+    @media (min-width: $screen-xl) {
+      font-size: 60px;
+    }
+  }
+
+  &__info {
+    font-size: 20px;
+    font-weight: 600;
+
+    @media (min-width: $screen-md) {
+      font-size: 32px;
+    }
+
+    @media (min-width: $screen-xl) {
+      font-size: 36px;
+    }
+  }
+
+  &__youtube {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__youtube-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    background-color: $white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.16);
+    user-select: none;
+    cursor: pointer;
+    transition: transform $transition-time;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.15);
+    }
+  }
+
+  &__youtube-text {
+    width: 205px;
+    font-weight: 500;
+  }
+
+  &__form {
+    padding: 16px;
+    background-color: $black;
+
+    .btn {
+      width: 100%;
+    }
+
+    .btn + .btn {
+      margin-top: 16px;
+    }
+  }
+
+  &__form-inner {
+    margin-bottom: 16px;
+  }
+
+  &__form-inner-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xl, 12);
+  }
+}

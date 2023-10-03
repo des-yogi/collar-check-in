@@ -1,0 +1,119 @@
+<!--DEV
+@ @include('blocks/hero-lp/hero-lp.html')
+-->
+
+<section class="container  hero-lp">
+  <div class="row  hero-lp__inner">
+
+    <div class="hero-lp__text-col">
+      <div class="hero-lp__text">
+        <h1 class="visually-hidden">Регистрация в личном кабинете компании Collar</h1>
+        <p class="hero-lp__caption" style="margin: 0 0 32px; line-height: 1.2;">Зарегистируйтесь <br> в личном кабинете</p>
+        <p class="hero-lp__info" style="margin: 0 0 32px; line-height: 1.2;">Делайте заказы в любое время суток, не дожидаясь торгового представителя</p>
+
+        <div class="hero-lp__youtube">
+          <button class="hero-lp__youtube-link" data-bs-toggle="modal" data-bs-target="#videoModal" aria-labelledby="youtubeLinkCaption">
+            <img src="img/youtube-video.svg" width="48" height="48" alt="">
+          </button>
+          <span class="hero-lp__youtube-text" id="youtubeLinkCaption">Смотрите видео о плюсах сотрудничества</span>
+          <!-- Watch the video on the benefits of collaboration -->
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-lp__form-col  dark">
+      <form class="hero-lp__form" action="" method="post">
+
+        <div class="row  hero-lp__form-inner">
+
+          <div class="hero-lp__form-inner-col">
+            @@include('../../blocks/field-text/field-text.html', {
+              "type": "text",
+              "placeholder": "Компания",
+              "name": "company"
+            })
+          </div>
+
+          <div class="hero-lp__form-inner-col">
+            @@include('../../blocks/field-text/field-text.html', {
+              "type": "text",
+              "placeholder": "Страна",
+              "name": "country"
+            })
+          </div>
+
+          <div class="hero-lp__form-inner-col">
+            @@include('../../blocks/field-text/field-text.html', {
+              "type": "text",
+              "placeholder": "Имя",
+              "name": "name"
+            })
+          </div>
+
+          <div class="hero-lp__form-inner-col">
+            @@include('../../blocks/field-text/field-text.html', {
+              "type": "text",
+              "placeholder": "Фамилия",
+              "name": "surname"
+            })
+          </div>
+
+          <div class="hero-lp__form-inner-col">
+            @@include('../../blocks/field-text/field-text.html', {
+              "type": "tel",
+              "placeholder": "Телефон",
+              "name": "tel"
+            })
+          </div>
+
+          <div class="hero-lp__form-inner-col">
+            @@include('../../blocks/field-text/field-text.html', {
+              "type": "email",
+              "placeholder": "E-mail",
+              "name": "email"
+            })
+          </div>
+
+          <div class="hero-lp__form-inner-col">
+            @@include('../../blocks/field-text/field-text.html', {
+              "type": "password",
+              "placeholder": "Пароль",
+              "name": "password"
+            })
+          </div>
+
+          <div class="hero-lp__form-inner-col">
+            @@include('../../blocks/field-text/field-text.html', {
+              "type": "password",
+              "placeholder": "Повторите пароль",
+              "name": "password-repeat"
+            })
+          </div>
+
+        </div>
+
+        <div class="hero-lp__agreement">
+
+          <div class="field-checkbox  field-checkbox--dark">
+
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="agreement" checked>
+              <span class="field-checkbox__name-text">Даю согласие на <a href="#">обработку и использование персональных данных</a></span>
+            </label>
+          </div>
+
+          <button class="btn  btn--red" type="submit" name="submit">
+            <span>Зарегистрироватся</span>
+          </button>
+
+          <a href="#" class="btn  hero-lp__login">
+            <span>Войти в аккаунт</span>
+          </a>
+
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</section>
