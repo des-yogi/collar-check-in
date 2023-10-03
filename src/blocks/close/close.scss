@@ -1,0 +1,29 @@
+.close {
+
+  $block-name:                &; // #{$block-name}__element
+
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: $white;
+  background-color: transparent;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+  transition: color 0.25s;
+
+  &:hover,
+  &:focus {
+    color: $color-danger;
+  }
+
+  &--regular {
+    color: $black;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home page</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main>
+
+        @@include('blocks/hero-lp/hero-lp.html')
+
+        <div class="container">
+
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="videoModalLabel">Modal title</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="embed-responsive" id="ytplayer">
+            <!-- <iframe title="Название видеоролика" src="https://www.youtube.com/embed/_CWnH5K4wsI?autoplay=1&autohide=1" allow="accelerometer; autoplay;" allowfullscreen="" width="640" height="360"></iframe> -->
+            <iframe id="player" type="text/html" width="640" height="360"
+              src="http://www.youtube.com/embed/_CWnH5K4wsI?enablejsapi=1&origin=http://localhost:3000/index.html"
+              frameborder="0"></iframe>
+            <script>
+
+              // Load the IFrame Player API code asynchronously.
+              var tag = document.createElement('script');
+              tag.src = "https://www.youtube.com/player_api";
+              var firstScriptTag = document.getElementsByTagName('script')[0];
+              firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+              // Replace the 'ytplayer' element with an <iframe> and
+              // YouTube player after the API code downloads.
+              var player;
+
+              function onYouTubePlayerAPIReady() {
+                player = new YT.Player('player', {
+                  // height: '360',
+                  // width: '640',
+                  // videoId: '_CWnH5K4wsI',
+                  // origin: 'http://localhost:3000/index.html',
+                  events: {
+                    'onReady': onPlayerReady,
+                  }
+                });
+              }
+
+              function onPlayerReady(event) {
+                event.target.playVideo();
+              }
+
+
+              const videoModal = document.querySelector('#videoModal');
+
+              videoModal.addEventListener('shown.bs.modal', evt => {
+
+                console.log('Modal is opened now');
+              })
+
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

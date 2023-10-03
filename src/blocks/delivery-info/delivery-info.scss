@@ -1,0 +1,14 @@
+.delivery-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 0 8px;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__text {
+    display: block;
+    width: 98px;
+    font-size: $font-size-sm;
+    line-height: 1.15;
+  }
+}
