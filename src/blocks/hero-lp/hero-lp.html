@@ -18,6 +18,25 @@
           <span class="hero-lp__youtube-text" id="youtubeLinkCaption">Смотрите видео о плюсах сотрудничества</span>
           <!-- Watch the video on the benefits of collaboration -->
         </div>
+
+        <div class="hero-lp__img">
+          <picture>
+            <source srcset="img/hero-dt@1x.webp" media="(min-width: 1280px)" type="image/webp">
+            <source srcset="img/hero-dt@1x.png" media="(min-width: 1280px)">
+            <!-- max-width: 736px; -->
+            <source srcset="img/hero-tab@1x.webp,
+                            img/hero-tab@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+            <source srcset="img/hero-tab@1x.png,
+                            img/hero-tab@2x.png 2x" media="(min-width: 768px)">
+            <!-- max-width: 560px; -->
+            <source srcset="img/hero-mob@1x.webp,
+                            img/hero-mob@2x.webp 2x" media="(min-width: 360px)" type="image/webp">
+            <source srcset="img/hero-mob@1x.png,
+                            img/hero-mob@2x.png 2x" media="(min-width: 360px)">
+            <!-- max-width: 360px; -->
+            <img src="img/hero-dt@1x.png" width="736" height="572" alt="Alt text">
+          </picture>
+        </div>
       </div>
     </div>
 
@@ -29,6 +48,8 @@
           <div class="hero-lp__form-inner-col">
             @@include('../../blocks/field-text/field-text.html', {
               "type": "text",
+              "imaskClass": "",
+              "requiredClass": "",
               "placeholder": "Компания",
               "name": "company"
             })
@@ -37,6 +58,8 @@
           <div class="hero-lp__form-inner-col">
             @@include('../../blocks/field-text/field-text.html', {
               "type": "text",
+              "imaskClass": "",
+              "requiredClass": "",
               "placeholder": "Страна",
               "name": "country"
             })
@@ -45,6 +68,8 @@
           <div class="hero-lp__form-inner-col">
             @@include('../../blocks/field-text/field-text.html', {
               "type": "text",
+              "imaskClass": "",
+              "requiredClass": "field-text__input--required",
               "placeholder": "Имя",
               "name": "name"
             })
@@ -53,6 +78,8 @@
           <div class="hero-lp__form-inner-col">
             @@include('../../blocks/field-text/field-text.html', {
               "type": "text",
+              "imaskClass": "",
+              "requiredClass": "field-text__input--required",
               "placeholder": "Фамилия",
               "name": "surname"
             })
@@ -61,6 +88,8 @@
           <div class="hero-lp__form-inner-col">
             @@include('../../blocks/field-text/field-text.html', {
               "type": "tel",
+              "imaskClass": "",
+              "requiredClass": "field-text__input--required",
               "placeholder": "Телефон",
               "name": "tel"
             })
@@ -69,6 +98,8 @@
           <div class="hero-lp__form-inner-col">
             @@include('../../blocks/field-text/field-text.html', {
               "type": "email",
+              "imaskClass": "",
+              "requiredClass": "field-text__input--required",
               "placeholder": "E-mail",
               "name": "email"
             })
@@ -77,6 +108,8 @@
           <div class="hero-lp__form-inner-col">
             @@include('../../blocks/field-text/field-text.html', {
               "type": "password",
+              "imaskClass": "",
+              "requiredClass": "field-text__input--required",
               "placeholder": "Пароль",
               "name": "password"
             })
@@ -85,6 +118,8 @@
           <div class="hero-lp__form-inner-col">
             @@include('../../blocks/field-text/field-text.html', {
               "type": "password",
+              "imaskClass": "",
+              "requiredClass": "field-text__input--required",
               "placeholder": "Повторите пароль",
               "name": "password-repeat"
             })

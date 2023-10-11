@@ -12,14 +12,26 @@
   }
 
   &__wrapper {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      display: inline-flex;
+      width: auto;
+    }
   }
 
   &__slogan {
     margin-top: 0 !important;
     margin-left: 40px;
+    text-align: right;
     text-transform: uppercase;
+
+    @media (min-width: $screen-md) {
+      text-align: inherit;
+    }
 
     @media (min-width: $screen-xl) {
       width: 268px;

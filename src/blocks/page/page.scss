@@ -337,6 +337,42 @@ a {
   }
 }
 
+// Modal
+
+.video-modal {
+
+  .modal-dialog {
+    //width: 100%;
+
+    @media (min-width: 576px) {
+      max-width: 640px;
+    }
+
+    @media (min-width: $screen-xl) {
+      max-width: 800px;
+    }
+  }
+
+  .modal-header {
+    position: relative;
+    //display: none;
+  }
+
+  &__close {
+    // position: absolute;
+    // z-index: 10;
+    // top: 20px;
+    // right: 20px;
+    // width: 40px;
+    // height: 40px;
+  }
+
+  .modal-header,
+  .modal-body {
+    padding: 0;
+  }
+}
+
 .modal-content {
   background-color: $body-bg;
 }

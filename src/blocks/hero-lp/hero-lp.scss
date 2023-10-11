@@ -18,10 +18,23 @@
     @include col(xs, 12);
     @include col(xl, 4);
     margin-bottom: 40px;
+    margin-top: -20px;
+
+    @media (min-width: $screen-md) {
+      margin-top: -50px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-top: 0;
+    }
   }
 
   &__text {
 
+    @media (min-width: $screen-xl) {
+      position: relative;
+      height: 100%;
+    }
   }
 
   &__caption {
@@ -82,6 +95,36 @@
     font-weight: 500;
   }
 
+  &__img {
+
+    @media (min-width: $screen-md) {
+      margin-top: -60px;
+    }
+
+    @media (min-width: $screen-xl) {
+      //margin-top: -84px;
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 360px;
+      margin: 0 auto;
+
+      @media (min-width: $screen-md) {
+        max-width: 560px;
+        margin-right: 0;
+      }
+
+      @media (min-width: $screen-xl) {
+        max-width: 736px;
+      }
+    }
+  }
+
   &__form {
     padding: 16px;
     background-color: $black;
@@ -103,5 +146,12 @@
     @include col(xs, 12);
     @include col(md, 6);
     @include col(xl, 12);
+  }
+
+  &__agreement {
+
+    .field-checkbox {
+      margin-bottom: 24px;
+    }
   }
 }

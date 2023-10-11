@@ -22,7 +22,8 @@
     "benefits-lp": [],
     "social-link-lp": [],
     "legal-info": [],
-    "check-in-form": []
+    "check-in-form": [],
+    "benefit-card": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

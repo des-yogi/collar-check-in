@@ -1,9 +1,25 @@
-// В этом файле должны быть стили для БЭМ-блока legal-info, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .legal-info {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media (min-width: $screen-md) {
+      flex-direction: initial;
+      gap: 32px;
+    }
+  }
+
+  &__link {
+    font-size: $font-size-sm;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
 }
