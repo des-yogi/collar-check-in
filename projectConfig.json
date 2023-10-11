@@ -23,7 +23,8 @@
     "social-link-lp": [],
     "legal-info": [],
     "check-in-form": [],
-    "benefit-card": []
+    "benefit-card": [],
+    "page-404": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
