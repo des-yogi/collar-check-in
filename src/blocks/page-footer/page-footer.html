@@ -1,11 +1,38 @@
 <!--DEV
-
-Нужно убрать пробел между @-ами:
-
 @ @include('blocks/page-footer/page-footer.html')
-
 -->
 
-<footer class="page-footer" role="contentinfo">
-  page-footer
+<footer class="container  page-footer">
+  <div class="row   page-footer__inner">
+
+    <div class="page-footer__logo-col">
+      <a href="index.html" class="logo" title="Collar company">
+        <img src="img/collar-logo.svg" width="63" height="56" alt="Collar logo">
+      </a>
+
+      <div class="page-footer__block-wrapper  page-footer__block-wrapper--info">
+        <p class="page-footer__text-info">Дополнительная информация</p>
+        <a href="https://www.collar.com" class="page-footer__link  page-footer__link--url" target="_blank" rel="nofollow noopener">www.collar.com</a>
+
+        @@include('../../blocks/social-link-lp/social-link-lp.html')
+      </div>
+
+    </div>
+
+    <div class="page-footer__tel-col">
+      <div class="page-footer__block-wrapper  page-footer__block-wrapper--tel">
+        <p class="page-footer__text-info">Номер горячей линии</p>
+        <a href="tel:+380800301977" class="page-footer__link  page-footer__link--url">+38 0 800 30 19 77</a>
+      </div>
+    </div>
+
+    <div class="page-footer__btn-col">
+      <a href="#" class="btn  btn--red">Войти в аккаунт</a>
+    </div>
+
+  </div>
+
+  <div class="page-footer__add-info">
+    @@include('../../blocks/legal-info/legal-info.html')
+  </div>
 </footer>

@@ -97,5 +97,17 @@
       border-color: $secondary-color;
       color: $secondary-color;
     }
+
+    &--disabled,
+    &:disabled {
+      // opacity: $opacity;
+      color: $text-muted;
+      cursor: not-allowed;
+      border-color: $block-bg;
+
+      @at-root a.btn--disabled {
+        pointer-events: none;
+      }
+    }
   }
 }

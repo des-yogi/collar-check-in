@@ -1,9 +1,75 @@
-// В этом файле должны быть стили для БЭМ-блока benefits-lp, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .benefits-lp {
+  padding-top: 72px;
+  padding-bottom: 72px;
 
   $block-name:                &; // #{$block-name}__element
 
+  @media (min-width: $screen-md) {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  &__faux-headings {
+    margin-top: 0 !important;
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    gap: 24px 0;
+  }
+
+  &__item {
+    @include col(xs, 12);
+    @include col(md, 12);
+
+    &:not(:first-child) {
+      @include col(xs, 12);
+      @include col(md, 6);
+
+      .benefit-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+
+    &:first-child {
+
+      .benefit-card {
+        position: relative;
+
+        @media (min-width: $screen-md) {
+          display: flex;
+          //align-items: center;
+          justify-content: space-between;
+        }
+      }
+
+      .benefit-card__img {
+
+        @media (min-width: $screen-md) {
+          flex: 0 0;
+          flex-basis: calc(50% - 16px);
+        }
+
+        @media (min-width: $screen-lg) {
+          flex-basis: 435px;
+        }
+      }
+
+      .benefit-card__header {
+
+        @media (min-width: $screen-md) {
+          flex: 1 1;
+          flex-basis: auto;
+          padding-right: 0;
+          padding-bottom: 24px;
+        }
+
+        @media (min-width: $screen-xl) {
+          padding-bottom: 32px;
+        }
+      }
+    }
+  }
 }
