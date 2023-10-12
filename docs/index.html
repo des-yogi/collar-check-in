@@ -1,4 +1,32 @@
-<!DOCTYPE html><html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#"><head>  <meta charset="utf-8">  <title>Home page</title>  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  <meta name="MobileOptimized" content="320">  <!--DEV Edge и ряд мобильных браузеров автоматом преобразуют телефоны в ссылки. Отключим это. -->  <meta name="format-detection" content="telephone=no">  <meta name="format-detection" content="date=no">  <meta name="format-detection" content="address=no">  <meta name="format-detection" content="email=no">  <meta name="description" content>  <meta name="keywords" content>  <meta name="robots" content="index,follow">  <!-- OpenGraph microdata  <meta property="og:url"      content="https://www.your-domain.com/your-page.html" />  <meta property="og:type"          content="website" />  <meta property="og:title"         content="Your Website Title" />  <meta property="og:description"   content="Your description" />  <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />  <meta property="og:locale"        content="uk_UA" />  -->  <!-- <link rel="canonical" href="https://www.your-domain.com/"> -->  <!-- <link rel="preload" href="assets/fonts/roboto-v18-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin>  <link rel="preload" href="assets/fonts/roboto-v18-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>  <link rel="preload" href="assets/fonts/noto-sans-v7-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin> -->  <link href="css/style.min.css" rel="stylesheet" media="screen"><link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <title>Home page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="MobileOptimized" content="320">
+  <!--DEV Edge и ряд мобильных браузеров автоматом преобразуют телефоны в ссылки. Отключим это. -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <meta name="description" content>
+  <meta name="keywords" content>
+  <meta name="robots" content="index,follow">
+  <!-- OpenGraph microdata
+  <meta property="og:url"      content="https://www.your-domain.com/your-page.html" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Your Website Title" />
+  <meta property="og:description"   content="Your description" />
+  <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+  <meta property="og:locale"        content="uk_UA" />
+  -->
+  <!-- <link rel="canonical" href="https://www.your-domain.com/"> -->
+  <!-- <link rel="preload" href="assets/fonts/roboto-v18-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/roboto-v18-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/noto-sans-v7-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
 <link rel="manifest" href="/img/site.webmanifest">
@@ -6,7 +34,12 @@
 <link rel="shortcut icon" href="/img/favicon.ico">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-config" content="/img/browserconfig.xml">
-<meta name="theme-color" content="#ffffff"></head><body><noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>  <div class="page__inner">    <div class="page__content">      <!--DEV
+<meta name="theme-color" content="#ffffff"></head>
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+  <div class="page__inner">
+    <div class="page__content">
+      <!--DEV
       @ @include('blocks/page-header/page-header.html')
       -->
       <header class="container  page-header">
@@ -20,10 +53,642 @@
               and people happy
             </p>
           </div>
-          <div class="page-header__user-menu">            <div class="delivery-info">              <svg width="32" height="32" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#globe"/></svg>              <span class="delivery-info__text">                Доставка по всему миру              </span>            </div>            <!--DEV            @ @include('blocks/hot-line-link/hot-line-link.html')            -->            <a href="tel:+0800300740" class="hot-line-link">              <span class="hot-line-link__text">Номер горячей линии</span>              <span class="hot-line-link__num">0 800 300 740</span>            </a>            <!--DEV            @ @include('blocks/lang-switcher/lang-switcher.html')            -->            <div class="dropdown-center  lang-switcher">              <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,-1">                Ru              </button>              <ul class="dropdown-menu">                <li class="active"><a class="dropdown-item">Ru</a></li>                <li><a class="dropdown-item" href="#">En</a></li>                <li><a class="dropdown-item" href="#">Pl</a></li>              </ul>            </div>            <a href="#" class="btn  btn--red  page-header__login">
+          <div class="page-header__user-menu">
+            <div class="delivery-info">
+              <svg width="32" height="32" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#globe"/></svg>
+              <span class="delivery-info__text">
+                Доставка по всему миру
+              </span>
+            </div>
+            <!--DEV
+            @ @include('blocks/hot-line-link/hot-line-link.html')
+            -->
+            <a href="tel:+0800300740" class="hot-line-link">
+              <span class="hot-line-link__text">Номер горячей линии</span>
+              <span class="hot-line-link__num">0 800 300 740</span>
+            </a>
+            <!--DEV
+            @ @include('blocks/lang-switcher/lang-switcher.html')
+            -->
+            <div class="dropdown-center  lang-switcher">
+              <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,-1">
+                Ru
+              </button>
+              <ul class="dropdown-menu">
+                <li class="active"><a class="dropdown-item">Ru</a></li>
+                <li><a class="dropdown-item" href="#">En</a></li>
+                <li><a class="dropdown-item" href="#">Pl</a></li>
+              </ul>
+            </div>
+            <a href="#" class="btn  btn--red  page-header__login">
               <span>Войти <span class="page-header__login-text">в аккаунт</span></span>
             </a>
           </div>
         </div>
       </header>
-      <main>        <!--DEV        @ @include('blocks/hero-lp/hero-lp.html')        -->        <section class="container  hero-lp">          <div class="row  hero-lp__inner">            <div class="hero-lp__text-col">              <div class="hero-lp__text">                <h1 class="visually-hidden">Регистрация в личном кабинете компании Collar</h1>                <p class="hero-lp__caption" style="margin: 0 0 32px; line-height: 1.2;">Зарегистируйтесь <br> в личном кабинете</p>                <p class="hero-lp__info" style="margin: 0 0 32px; line-height: 1.2;">Делайте заказы в любое время суток, не дожидаясь торгового представителя</p>                <div class="hero-lp__youtube">                  <button class="hero-lp__youtube-link" data-bs-toggle="modal" data-bs-target="#videoModal" aria-labelledby="youtubeLinkCaption">                    <span class="hero-lp__youtube-icon">                      <img src="img/youtube-video.svg" width="48" height="48" alt>                    </span>                    <span class="hero-lp__youtube-text" id="youtubeLinkCaption">Смотрите видео о плюсах сотрудничества</span>                    <!-- Watch the video on the benefits of collaboration -->                  </button>                </div>                <div class="hero-lp__img">                  <picture>                    <source srcset="img/hero-dt@1x.webp" media="(min-width: 1280px)" type="image/webp">                    <source srcset="img/hero-dt@1x.png" media="(min-width: 1280px)">                    <!-- max-width: 736px; -->                    <source srcset="img/hero-tab@1x.webp,                                    img/hero-tab@2x.webp 2x" media="(min-width: 768px)" type="image/webp">                    <source srcset="img/hero-tab@1x.png,                                    img/hero-tab@2x.png 2x" media="(min-width: 768px)">                    <!-- max-width: 560px; -->                    <source srcset="img/hero-mob@1x.webp,                                    img/hero-mob@2x.webp 2x" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/hero-mob@1x.png,                                    img/hero-mob@2x.png 2x" media="(min-width: 360px)">                    <!-- max-width: 360px; -->                    <img src="img/hero-dt@1x.png" width="736" height="572" alt="Alt text">                  </picture>                </div>              </div>            </div>            <div class="hero-lp__form-col  dark">              <form class="hero-lp__form" action method="post">                <div class="row  hero-lp__form-inner">                  <div class="hero-lp__form-inner-col">                    <!--DEV                    @ @include('blocks/field-text/field-text.html', {                      "type": "text",                      "placeholder": "",                      "name": "",                      "imaskClass": "",                      "requiredClass": ""                    })                    -->                    <label class="field-text">                      <!-- <span class="field-text__name">Текст</span> -->                      <span class="field-text__input-wrap">                        <input class="field-text__input    " type="text" name="company" value placeholder="Компания">                        <span class="field-text__help-text error" data-error="company"></span>                      </span>                    </label>                  </div>                  <div class="hero-lp__form-inner-col">                    <!--DEV                    @ @include('blocks/field-text/field-text.html', {                      "type": "text",                      "placeholder": "",                      "name": "",                      "imaskClass": "",                      "requiredClass": ""                    })                    -->                    <label class="field-text">                      <!-- <span class="field-text__name">Текст</span> -->                      <span class="field-text__input-wrap">                        <input class="field-text__input    " type="text" name="country" value placeholder="Страна">                        <span class="field-text__help-text error" data-error="country"></span>                      </span>                    </label>                  </div>                  <div class="hero-lp__form-inner-col">                    <!--DEV                    @ @include('blocks/field-text/field-text.html', {                      "type": "text",                      "placeholder": "",                      "name": "",                      "imaskClass": "",                      "requiredClass": ""                    })                    -->                    <label class="field-text">                      <!-- <span class="field-text__name">Текст</span> -->                      <span class="field-text__input-wrap">                        <input class="field-text__input  field-text__input--required  " type="text" name="name" value placeholder="Имя">                        <span class="field-text__help-text error" data-error="name"></span>                      </span>                    </label>                  </div>                  <div class="hero-lp__form-inner-col">                    <!--DEV                    @ @include('blocks/field-text/field-text.html', {                      "type": "text",                      "placeholder": "",                      "name": "",                      "imaskClass": "",                      "requiredClass": ""                    })                    -->                    <label class="field-text">                      <!-- <span class="field-text__name">Текст</span> -->                      <span class="field-text__input-wrap">                        <input class="field-text__input  field-text__input--required  " type="text" name="surname" value placeholder="Фамилия">                        <span class="field-text__help-text error" data-error="surname"></span>                      </span>                    </label>                  </div>                  <div class="hero-lp__form-inner-col">                    <!--DEV                    @ @include('blocks/field-text/field-text.html', {                      "type": "text",                      "placeholder": "",                      "name": "",                      "imaskClass": "",                      "requiredClass": ""                    })                    -->                    <label class="field-text">                      <!-- <span class="field-text__name">Текст</span> -->                      <span class="field-text__input-wrap">                        <input class="field-text__input  field-text__input--required  " type="tel" name="tel" value placeholder="Телефон">                        <span class="field-text__help-text error" data-error="tel"></span>                      </span>                    </label>                  </div>                  <div class="hero-lp__form-inner-col">                    <!--DEV                    @ @include('blocks/field-text/field-text.html', {                      "type": "text",                      "placeholder": "",                      "name": "",                      "imaskClass": "",                      "requiredClass": ""                    })                    -->                    <label class="field-text">                      <!-- <span class="field-text__name">Текст</span> -->                      <span class="field-text__input-wrap">                        <input class="field-text__input  field-text__input--required  " type="email" name="email" value placeholder="E-mail">                        <span class="field-text__help-text error" data-error="email"></span>                      </span>                    </label>                  </div>                  <div class="hero-lp__form-inner-col">                    <!--DEV                    @ @include('blocks/field-text/field-text.html', {                      "type": "text",                      "placeholder": "",                      "name": "",                      "imaskClass": "",                      "requiredClass": ""                    })                    -->                    <label class="field-text">                      <!-- <span class="field-text__name">Текст</span> -->                      <span class="field-text__input-wrap">                        <input class="field-text__input  field-text__input--required  " type="password" name="password" value placeholder="Пароль">                        <span class="field-text__help-text error" data-error="password"></span>                      </span>                    </label>                  </div>                  <div class="hero-lp__form-inner-col">                    <!--DEV                    @ @include('blocks/field-text/field-text.html', {                      "type": "text",                      "placeholder": "",                      "name": "",                      "imaskClass": "",                      "requiredClass": ""                    })                    -->                    <label class="field-text">                      <!-- <span class="field-text__name">Текст</span> -->                      <span class="field-text__input-wrap">                        <input class="field-text__input  field-text__input--required  " type="password" name="password-repeat" value placeholder="Повторите пароль">                        <span class="field-text__help-text error" data-error="password-repeat"></span>                      </span>                    </label>                  </div>                </div>                <div class="hero-lp__agreement">                  <div class="field-checkbox  field-checkbox--dark">                    <label class="field-checkbox__name">                      <input class="field-checkbox__input" type="checkbox" name="agreement" checked>                      <span class="field-checkbox__name-text">Даю согласие на <a href="#">обработку и использование персональных данных</a></span>                    </label>                  </div>                  <button class="btn  btn--red" type="submit" name="submit">                    <span>Зарегистрироватся</span>                  </button>                  <a href="#" class="btn  hero-lp__login">                    <span>Войти в аккаунт</span>                  </a>                </div>              </form>            </div>          </div>        </section>        <section class="container  benefits-lp">          <h2 class="visually-hidden">            Ваша выгода от сотрудничества / Your benefit from our cooperation          </h2>          <p class="h2  benefits-lp__faux-headings">После регистрации вы получите:</p>          <ul class="list-nostyled  row  benefits-lp__list">            <li class="benefits-lp__item">              <article class="benefit-card">                <div class="benefit-card__header">                  <span class="benefit-card__idx">1</span>                  <h3 class="benefit-card__caption">Возможность заказа 24/7 online</h3>                  <p class="benefit-card__descr">Заказывайте товары не дожидаясь персонального менеджера в любое время</p>                </div>                <div class="benefit-card__img">                  <picture>                    <source srcset="img/collar-com-b2b-benefit-01.webp,                                    img/collar-com-b2b-benefit-01.webp 2x" media="(min-width: 768px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-01.jpg,                                    img/collar-com-b2b-benefit-01.jpg" media="(min-width: 768px)">                    <!-- 435x372, 870x744 2x -->                    <source srcset="img/collar-com-b2b-benefit-01.webp" media="(min-width: 480px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-01.jpg" media="(min-width: 480px)">                    <!-- 1000x855 -->                    <source srcset="img/collar-com-b2b-benefit-01.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-01.jpg" media="(min-width: 360px)">                    <!-- 896x766 -->                    <img src="img/collar-com-b2b-benefit-01.jpg" alt="Text" width="1000" height="855" loading="lazy">                  </picture>                </div>              </article>            </li>            <li class="benefits-lp__item">              <article class="benefit-card">                <div class="benefit-card__header">                  <span class="benefit-card__idx">2</span>                  <h3 class="benefit-card__caption">Оптовые цены</h3>                  <p class="benefit-card__descr">Доступ к полному каталогу с оптовыми ценами и подробным описанием всех товаров</p>                </div>                <div class="benefit-card__img">                  <picture>                    <source srcset="img/collar-com-b2b-benefit-02.webp,                                    img/collar-com-b2b-benefit-02.webp 2x" media="(min-width: 992px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-02.jpg,                                    img/collar-com-b2b-benefit-02.jpg 2x" media="(min-width: 992px)">                    <!-- 588x503, 1000x855 2x -->                    <source srcset="img/collar-com-b2b-benefit-02.webp,                                    img/collar-com-b2b-benefit-02.webp 2x" media="(min-width: 768px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-02.jpg,                                    img/collar-com-b2b-benefit-02.jpg 2x" media="(min-width: 768px)">                    <!-- 460x393, 920x786 2x -->                    <source srcset="img/collar-com-b2b-benefit-02.webp" media="(min-width: 480px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-02.jpg" media="(min-width: 480px)">                    <!-- 1000x855 -->                    <source srcset="img/collar-com-b2b-benefit-02.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-02.jpg" media="(min-width: 360px)">                    <!-- 448x383, 896x766 2x -->                    <img src="img/collar-com-b2b-benefit-02.jpg" alt="Text" width="1000" height="855" loading="lazy">                  </picture>                </div>              </article>            </li>            <li class="benefits-lp__item">              <article class="benefit-card">                <div class="benefit-card__header">                  <span class="benefit-card__idx">3</span>                  <h3 class="benefit-card__caption">Наличие и оперативность</h3>                  <p class="benefit-card__descr">Всегда актуальная информация об имеющейся продукции и цене на нее</p>                </div>                <div class="benefit-card__img">                  <picture>                    <source srcset="img/collar-com-b2b-benefit-03.webp,                                    img/collar-com-b2b-benefit-03.webp 2x" media="(min-width: 992px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-03.jpg,                                    img/collar-com-b2b-benefit-03.jpg 2x" media="(min-width: 992px)">                    <!-- 588x503, 1000x855 2x -->                    <source srcset="img/collar-com-b2b-benefit-03.webp,                                    img/collar-com-b2b-benefit-03.webp 2x" media="(min-width: 768px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-03.jpg,                                    img/collar-com-b2b-benefit-03.jpg 2x" media="(min-width: 768px)">                    <!-- 460x393, 920x786 2x -->                    <source srcset="img/collar-com-b2b-benefit-03.webp" media="(min-width: 480px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-03.jpg" media="(min-width: 480px)">                    <!-- 1000x855 -->                    <source srcset="img/collar-com-b2b-benefit-03.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-03.jpg" media="(min-width: 360px)">                    <!-- 448x383, 896x766 2x -->                    <img src="img/collar-com-b2b-benefit-03.jpg" alt="Text" width="1000" height="855" loading="lazy">                  </picture>                </div>              </article>            </li>            <li class="benefits-lp__item">              <article class="benefit-card">                <div class="benefit-card__header">                  <span class="benefit-card__idx">4</span>                  <h3 class="benefit-card__caption">Персональные скидки</h3>                  <p class="benefit-card__descr">Уникальные предложения именно для вашего бизнеса</p>                </div>                <div class="benefit-card__img">                  <picture>                    <source srcset="img/collar-com-b2b-benefit-04.webp,                                    img/collar-com-b2b-benefit-04.webp 2x" media="(min-width: 992px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-04.jpg,                                    img/collar-com-b2b-benefit-04.jpg 2x" media="(min-width: 992px)">                    <!-- 588x503, 1000x855 2x -->                    <source srcset="img/collar-com-b2b-benefit-04.webp,                                    img/collar-com-b2b-benefit-04.webp 2x" media="(min-width: 768px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-04.jpg,                                    img/collar-com-b2b-benefit-04.jpg 2x" media="(min-width: 768px)">                    <!-- 460x393, 920x786 2x -->                    <source srcset="img/collar-com-b2b-benefit-04.webp" media="(min-width: 480px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-04.jpg" media="(min-width: 480px)">                    <!-- 1000x855 -->                    <source srcset="img/collar-com-b2b-benefit-04.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-04.jpg" media="(min-width: 360px)">                    <!-- 448x383, 896x766 2x -->                    <img src="img/collar-com-b2b-benefit-04.jpg" alt="Text" width="1000" height="855" loading="lazy">                  </picture>                </div>              </article>            </li>            <li class="benefits-lp__item">              <article class="benefit-card">                <div class="benefit-card__header">                  <span class="benefit-card__idx">5</span>                  <h3 class="benefit-card__caption">Прайсы и xml выгрузки</h3>                  <p class="benefit-card__descr">Возможность создавать прайсы и xml выгрузки по вашим ценам для сайта</p>                </div>                <div class="benefit-card__img">                  <picture>                    <source srcset="img/collar-com-b2b-benefit-05.webp,                                    img/collar-com-b2b-benefit-05.webp 2x" media="(min-width: 992px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-05.jpg,                                    img/collar-com-b2b-benefit-05.jpg 2x" media="(min-width: 992px)">                    <!-- 588x503, 1000x855 2x -->                    <source srcset="img/collar-com-b2b-benefit-05.webp,                                    img/collar-com-b2b-benefit-05.webp 2x" media="(min-width: 768px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-05.jpg,                                    img/collar-com-b2b-benefit-05.jpg 2x" media="(min-width: 768px)">                    <!-- 460x393, 920x786 2x -->                    <source srcset="img/collar-com-b2b-benefit-05.webp" media="(min-width: 480px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-05.jpg" media="(min-width: 480px)">                    <!-- 1000x855 -->                    <source srcset="img/collar-com-b2b-benefit-05.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-05.jpg" media="(min-width: 360px)">                    <!-- 448x383, 896x766 2x -->                    <img src="img/collar-com-b2b-benefit-05.jpg" alt="Text" width="1000" height="855" loading="lazy">                  </picture>                </div>              </article>            </li>            <li class="benefits-lp__item">              <article class="benefit-card">                <div class="benefit-card__header">                  <span class="benefit-card__idx">6</span>                  <h3 class="benefit-card__caption">История и повторы</h3>                  <p class="benefit-card__descr">История заказов с возможностью скопировать и повторить заказ, чтобы сэкономить время</p>                </div>                <div class="benefit-card__img">                  <picture>                    <source srcset="img/collar-com-b2b-benefit-06.webp,                                    img/collar-com-b2b-benefit-06.webp 2x" media="(min-width: 992px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-06.jpg,                                    img/collar-com-b2b-benefit-06.jpg 2x" media="(min-width: 992px)">                    <!-- 588x503, 1000x855 2x -->                    <source srcset="img/collar-com-b2b-benefit-06.webp,                                    img/collar-com-b2b-benefit-06.webp 2x" media="(min-width: 768px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-06.jpg,                                    img/collar-com-b2b-benefit-06.jpg 2x" media="(min-width: 768px)">                    <!-- 460x393, 920x786 2x -->                    <source srcset="img/collar-com-b2b-benefit-06.webp" media="(min-width: 480px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-06.jpg" media="(min-width: 480px)">                    <!-- 1000x855 -->                    <source srcset="img/collar-com-b2b-benefit-06.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-06.jpg" media="(min-width: 360px)">                    <!-- 448x383, 896x766 2x -->                    <img src="img/collar-com-b2b-benefit-06.jpg" alt="Text" width="1000" height="855" loading="lazy">                  </picture>                </div>              </article>            </li>            <li class="benefits-lp__item">              <article class="benefit-card">                <div class="benefit-card__header">                  <span class="benefit-card__idx">7</span>                  <h3 class="benefit-card__caption">Доставка и дропшиппинг</h3>                  <p class="benefit-card__descr">Доставка заказа самым удобным для вас способом или же сразу прямая доставка конечному клиенту</p>                </div>                <div class="benefit-card__img">                  <picture>                    <source srcset="img/collar-com-b2b-benefit-07.webp,                                    img/collar-com-b2b-benefit-07.webp 2x" media="(min-width: 992px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-07.jpg,                                    img/collar-com-b2b-benefit-07.jpg 2x" media="(min-width: 992px)">                    <!-- 588x503, 1000x855 2x -->                    <source srcset="img/collar-com-b2b-benefit-07.webp,                                    img/collar-com-b2b-benefit-07.webp 2x" media="(min-width: 768px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-07.jpg,                                    img/collar-com-b2b-benefit-07.jpg 2x" media="(min-width: 768px)">                    <!-- 460x393, 920x786 2x -->                    <source srcset="img/collar-com-b2b-benefit-07.webp" media="(min-width: 480px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-07.jpg" media="(min-width: 480px)">                    <!-- 1000x855 -->                    <source srcset="img/collar-com-b2b-benefit-07.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-07.jpg" media="(min-width: 360px)">                    <!-- 448x383, 896x766 2x -->                    <img src="img/collar-com-b2b-benefit-07.jpg" alt="Text" width="1000" height="855" loading="lazy">                  </picture>                </div>              </article>            </li>            <li class="benefits-lp__item">              <article class="benefit-card">                <div class="benefit-card__header">                  <span class="benefit-card__idx">8</span>                  <h3 class="benefit-card__caption">Другие функции</h3>                  <p class="benefit-card__descr">Оформление возвратов, полная история взаиморасчетов, сообщения и т.д.</p>                </div>                <div class="benefit-card__img">                  <picture>                    <source srcset="img/collar-com-b2b-benefit-08.webp,                                    img/collar-com-b2b-benefit-08.webp 2x" media="(min-width: 992px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-08.jpg,                                    img/collar-com-b2b-benefit-08.jpg 2x" media="(min-width: 992px)">                    <!-- 588x503, 1000x855 2x -->                    <source srcset="img/collar-com-b2b-benefit-08.webp,                                    img/collar-com-b2b-benefit-08.webp 2x" media="(min-width: 768px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-08.jpg,                                    img/collar-com-b2b-benefit-08.jpg 2x" media="(min-width: 768px)">                    <!-- 460x393, 920x786 2x -->                    <source srcset="img/collar-com-b2b-benefit-08.webp" media="(min-width: 480px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-08.jpg" media="(min-width: 480px)">                    <!-- 1000x855 -->                    <source srcset="img/collar-com-b2b-benefit-08.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-08.jpg" media="(min-width: 360px)">                    <!-- 448x383, 896x766 2x -->                    <img src="img/collar-com-b2b-benefit-08.jpg" alt="Text" width="1000" height="855" loading="lazy">                  </picture>                </div>              </article>            </li>            <li class="benefits-lp__item">              <article class="benefit-card">                <div class="benefit-card__header">                  <span class="benefit-card__idx">9</span>                  <h3 class="benefit-card__caption">Прямая гарантия от производителя</h3>                  <p class="benefit-card__descr">Продавец получает защиту от рисков, а конечный потребитель – консультацию, обмен или возврат продукции</p>                </div>                <div class="benefit-card__img">                  <picture>                    <source srcset="img/collar-com-b2b-benefit-09.webp,                                    img/collar-com-b2b-benefit-09.webp 2x" media="(min-width: 992px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-09.jpg,                                    img/collar-com-b2b-benefit-09.jpg 2x" media="(min-width: 992px)">                    <!-- 588x503, 1000x855 2x -->                    <source srcset="img/collar-com-b2b-benefit-09.webp,                                    img/collar-com-b2b-benefit-09.webp 2x" media="(min-width: 768px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-09.jpg,                                    img/collar-com-b2b-benefit-09.jpg 2x" media="(min-width: 768px)">                    <!-- 460x393, 920x786 2x -->                    <source srcset="img/collar-com-b2b-benefit-09.webp" media="(min-width: 480px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-09.jpg" media="(min-width: 480px)">                    <!-- 1000x855 -->                    <source srcset="img/collar-com-b2b-benefit-09.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/collar-com-b2b-benefit-09.jpg" media="(min-width: 360px)">                    <!-- 448x383, 896x766 2x -->                    <img src="img/collar-com-b2b-benefit-09.jpg" alt="Text" width="1000" height="855" loading="lazy">                  </picture>                </div>              </article>            </li>          </ul>        </section>      </main>    </div>    <div class="page__footer-wrapper">      <!--DEV      @ @include('blocks/page-footer/page-footer.html')      -->      <footer class="container  page-footer">        <div class="row   page-footer__inner">          <div class="page-footer__logo-col">            <a href="index.html" class="logo" title="Collar company">              <img src="img/collar-logo.svg" width="63" height="56" alt="Collar logo">            </a>            <div class="page-footer__block-wrapper  page-footer__block-wrapper--info">              <p class="page-footer__text-info">Дополнительная информация</p>              <a href="https://www.collar.com" class="page-footer__link  page-footer__link--url" target="_blank" rel="nofollow noopener">www.collar.com</a>              <!--DEV              @ @include('blocks/social-link-lp/social-link-lp.html')              -->              <section class="social-link-lp">                <h4 class="visually-hidden">Наши контакты в социальных сетях (Our social media contacts)</h4>                <ul class="list-nostyled  social-link-lp__list">                  <li class="social-link-lp__item">                    <a href="#" class="social-link-lp__link" title="Facebook" target="_blank" rel="nofollow noopener">                      <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook"/></svg>                    </a>                  </li>                  <li class="social-link-lp__item">                    <a href="#" class="social-link-lp__link" title="Linkedin" target="_blank" rel="nofollow noopener">                      <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#linkedin"/></svg>                    </a>                  </li>                  <li class="social-link-lp__item">                    <a href="#" class="social-link-lp__link" title="Instagram" target="_blank" rel="nofollow noopener">                      <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#instagram"/></svg>                    </a>                  </li>                </ul>              </section>            </div>          </div>          <div class="page-footer__tel-col">            <div class="page-footer__block-wrapper  page-footer__block-wrapper--tel">              <p class="page-footer__text-info">Номер горячей линии</p>              <a href="tel:+380800301977" class="page-footer__link  page-footer__link--url">+38 0 800 30 19 77</a>            </div>          </div>          <div class="page-footer__btn-col">            <a href="#" class="btn  btn--red">Войти в аккаунт</a>          </div>        </div>        <div class="page-footer__add-info">          <!--DEV          @ @include('blocks/legal-info/legal-info.html')          -->          <section class="legal-info">            <h4 class="visually-hidden">              Legal and other useful information for the site user /              Правовая и другая полезная информация для пользователя сайта            </h4>            <ul class="list-nostyled  legal-info__list">              <li class="legal-info__item">                <a href="#" class="legal-info__link">Условия использования сайта</a>              </li>              <li class="legal-info__item">                <a href="#" class="legal-info__link">Обработка персональных данных</a>              </li>            </ul>          </section>        </div>      </footer>    </div>  </div>  <!-- Modal -->  <div class="modal fade  video-modal" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">    <div class="modal-dialog  modal-dialog-centered">      <div class="modal-content">        <div class="modal-header">          <h4 class="modal-titl  visually-hidden" id="videoModalLabel">Modal title</h4>          <!-- <button type="button" class="video-modal__close" data-bs-dismiss="modal" aria-label="Close"></button> -->        </div>        <div class="modal-body">          <div class="embed-responsive" id="ytplayer">            <!-- <iframe title="Название видеоролика" src="https://www.youtube.com/embed/_CWnH5K4wsI?autoplay=1&autohide=1" allow="accelerometer; autoplay;" allowfullscreen="" width="640" height="360"></iframe> -->            <iframe id="player" type="text/html" width="640" height="360" src="http://www.youtube.com/embed/_CWnH5K4wsI?enablejsapi=1" allow="accelerometer; autoplay;" frameborder="0" allowfullscreen></iframe>            <script>              // Load the IFrame Player API code asynchronously.              var tag = document.createElement('script');              tag.src = "https://www.youtube.com/player_api";              var firstScriptTag = document.getElementsByTagName('script')[0];              firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);              // Replace the 'ytplayer' element with an <iframe> and              // YouTube player after the API code downloads.              var player;              function onYouTubePlayerAPIReady() {                player = new YT.Player('player', {                  // height: '360',                  // width: '640',                  // videoId: '_CWnH5K4wsI',                  // origin: 'http://localhost:3000/index.html',                  events: {                    'onReady': onPlayerReady,                  }                });              }              function onPlayerReady(event) {                event.target.playVideo();              }              const videoModal = document.querySelector('#videoModal');              videoModal.addEventListener('shown.bs.modal', evt => {                //console.log('Modal is opened now: ');                document.getElementById('player').contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');              })              videoModal.addEventListener('hide.bs.modal', evt => {                //console.log('Modal is closed now: ');                document.getElementById('player').contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');              })              // '*' - origin ( https://site.com/ )            </script>          </div>        </div>      </div>    </div>  </div>  <!-- <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script> -->  <script src="js/script.min.js"></script></body></html>
+      <main>
+        <!--DEV
+        @ @include('blocks/hero-lp/hero-lp.html')
+        -->
+        <section class="container  hero-lp">
+          <div class="row  hero-lp__inner">
+            <div class="hero-lp__text-col">
+              <div class="hero-lp__text">
+                <h1 class="visually-hidden">Регистрация в личном кабинете компании Collar</h1>
+                <p class="hero-lp__caption" style="margin: 0 0 32px; line-height: 1.2;">Зарегистируйтесь <br> в личном кабинете</p>
+                <p class="hero-lp__info" style="margin: 0 0 32px; line-height: 1.2;">Делайте заказы в любое время суток, не дожидаясь торгового представителя</p>
+                <div class="hero-lp__youtube">
+                  <button class="hero-lp__youtube-link" data-bs-toggle="modal" data-bs-target="#videoModal" aria-labelledby="youtubeLinkCaption">
+                    <span class="hero-lp__youtube-icon">
+                      <img src="img/youtube-video.svg" width="48" height="48" alt>
+                    </span>
+                    <span class="hero-lp__youtube-text" id="youtubeLinkCaption">Смотрите видео о плюсах сотрудничества</span>
+                    <!-- Watch the video on the benefits of collaboration -->
+                  </button>
+                </div>
+                <div class="hero-lp__img">
+                  <picture>
+                    <source srcset="img/hero-dt@1x.webp" media="(min-width: 1280px)" type="image/webp">
+                    <source srcset="img/hero-dt@1x.png" media="(min-width: 1280px)">
+                    <!-- max-width: 736px; -->
+                    <source srcset="img/hero-tab@1x.webp,
+                                    img/hero-tab@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/hero-tab@1x.png,
+                                    img/hero-tab@2x.png 2x" media="(min-width: 768px)">
+                    <!-- max-width: 560px; -->
+                    <source srcset="img/hero-mob@1x.webp,
+                                    img/hero-mob@2x.webp 2x" media="(min-width: 360px)" type="image/webp">
+                    <source srcset="img/hero-mob@1x.png,
+                                    img/hero-mob@2x.png 2x" media="(min-width: 360px)">
+                    <!-- max-width: 360px; -->
+                    <img src="img/hero-dt@1x.png" width="736" height="572" alt="Alt text">
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <div class="hero-lp__form-col  dark">
+              <form class="hero-lp__form" action method="post">
+                <div class="row  hero-lp__form-inner">
+                  <div class="hero-lp__form-inner-col">
+                    <!--DEV
+                    @ @include('blocks/field-text/field-text.html', {
+                      "type": "text",
+                      "placeholder": "",
+                      "name": "",
+                      "imaskClass": "",
+                      "requiredClass": ""
+                    })
+                    -->
+                    <label class="field-text">
+                      <!-- <span class="field-text__name">Текст</span> -->
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input    " type="text" name="company" value placeholder="Компания">
+                        <span class="field-text__help-text error" data-error="company"></span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="hero-lp__form-inner-col">
+                    <!--DEV
+                    @ @include('blocks/field-text/field-text.html', {
+                      "type": "text",
+                      "placeholder": "",
+                      "name": "",
+                      "imaskClass": "",
+                      "requiredClass": ""
+                    })
+                    -->
+                    <label class="field-text">
+                      <!-- <span class="field-text__name">Текст</span> -->
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input    " type="text" name="country" value placeholder="Страна">
+                        <span class="field-text__help-text error" data-error="country"></span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="hero-lp__form-inner-col">
+                    <!--DEV
+                    @ @include('blocks/field-text/field-text.html', {
+                      "type": "text",
+                      "placeholder": "",
+                      "name": "",
+                      "imaskClass": "",
+                      "requiredClass": ""
+                    })
+                    -->
+                    <label class="field-text">
+                      <!-- <span class="field-text__name">Текст</span> -->
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input  field-text__input--required  " type="text" name="name" value placeholder="Имя">
+                        <span class="field-text__help-text error" data-error="name"></span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="hero-lp__form-inner-col">
+                    <!--DEV
+                    @ @include('blocks/field-text/field-text.html', {
+                      "type": "text",
+                      "placeholder": "",
+                      "name": "",
+                      "imaskClass": "",
+                      "requiredClass": ""
+                    })
+                    -->
+                    <label class="field-text">
+                      <!-- <span class="field-text__name">Текст</span> -->
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input  field-text__input--required  " type="text" name="surname" value placeholder="Фамилия">
+                        <span class="field-text__help-text error" data-error="surname"></span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="hero-lp__form-inner-col">
+                    <!--DEV
+                    @ @include('blocks/field-text/field-text.html', {
+                      "type": "text",
+                      "placeholder": "",
+                      "name": "",
+                      "imaskClass": "",
+                      "requiredClass": ""
+                    })
+                    -->
+                    <label class="field-text">
+                      <!-- <span class="field-text__name">Текст</span> -->
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input  field-text__input--required  " type="tel" name="tel" value placeholder="Телефон">
+                        <span class="field-text__help-text error" data-error="tel"></span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="hero-lp__form-inner-col">
+                    <!--DEV
+                    @ @include('blocks/field-text/field-text.html', {
+                      "type": "text",
+                      "placeholder": "",
+                      "name": "",
+                      "imaskClass": "",
+                      "requiredClass": ""
+                    })
+                    -->
+                    <label class="field-text">
+                      <!-- <span class="field-text__name">Текст</span> -->
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input  field-text__input--required  " type="email" name="email" value placeholder="E-mail">
+                        <span class="field-text__help-text error" data-error="email"></span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="hero-lp__form-inner-col">
+                    <!--DEV
+                    @ @include('blocks/field-text/field-text.html', {
+                      "type": "text",
+                      "placeholder": "",
+                      "name": "",
+                      "imaskClass": "",
+                      "requiredClass": ""
+                    })
+                    -->
+                    <label class="field-text">
+                      <!-- <span class="field-text__name">Текст</span> -->
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input  field-text__input--required  " type="password" name="password" value placeholder="Пароль">
+                        <span class="field-text__help-text error" data-error="password"></span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="hero-lp__form-inner-col">
+                    <!--DEV
+                    @ @include('blocks/field-text/field-text.html', {
+                      "type": "text",
+                      "placeholder": "",
+                      "name": "",
+                      "imaskClass": "",
+                      "requiredClass": ""
+                    })
+                    -->
+                    <label class="field-text">
+                      <!-- <span class="field-text__name">Текст</span> -->
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input  field-text__input--required  " type="password" name="password-repeat" value placeholder="Повторите пароль">
+                        <span class="field-text__help-text error" data-error="password-repeat"></span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="hero-lp__agreement">
+                  <div class="field-checkbox  field-checkbox--dark">
+                    <label class="field-checkbox__name">
+                      <input class="field-checkbox__input" type="checkbox" name="agreement" checked>
+                      <span class="field-checkbox__name-text">Даю согласие на <a href="#">обработку и использование персональных данных</a></span>
+                    </label>
+                  </div>
+                  <button class="btn  btn--red" type="submit" name="submit">
+                    <span>Зарегистрироватся</span>
+                  </button>
+                  <a href="#" class="btn  hero-lp__login">
+                    <span>Войти в аккаунт</span>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="container  benefits-lp">
+          <h2 class="visually-hidden">
+            Ваша выгода от сотрудничества / Your benefit from our cooperation
+          </h2>
+          <p class="h2  benefits-lp__faux-headings">После регистрации вы получите:</p>
+          <ul class="list-nostyled  row  benefits-lp__list">
+            <li class="benefits-lp__item">
+              <article class="benefit-card">
+                <div class="benefit-card__header">
+                  <span class="benefit-card__idx">1</span>
+                  <h3 class="benefit-card__caption">Возможность заказа 24/7 online</h3>
+                  <p class="benefit-card__descr">Заказывайте товары не дожидаясь персонального менеджера в любое время</p>
+                </div>
+                <div class="benefit-card__img">
+                  <picture>
+                    <source srcset="img/collar-com-b2b-benefit-01.webp,
+                                    img/collar-com-b2b-benefit-01.webp 2x" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-01.jpg,
+                                    img/collar-com-b2b-benefit-01.jpg" media="(min-width: 768px)">
+                    <!-- 435x372, 870x744 2x -->
+                    <source srcset="img/collar-com-b2b-benefit-01.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-01.jpg" media="(min-width: 480px)">
+                    <!-- 1000x855 -->
+                    <source srcset="img/collar-com-b2b-benefit-01.webp" media="(min-width: 360px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-01.jpg" media="(min-width: 360px)">
+                    <!-- 896x766 -->
+                    <img src="img/collar-com-b2b-benefit-01.jpg" alt="Text" width="1000" height="855" loading="lazy">
+                  </picture>
+                </div>
+              </article>
+            </li>
+            <li class="benefits-lp__item">
+              <article class="benefit-card">
+                <div class="benefit-card__header">
+                  <span class="benefit-card__idx">2</span>
+                  <h3 class="benefit-card__caption">Оптовые цены</h3>
+                  <p class="benefit-card__descr">Доступ к полному каталогу с оптовыми ценами и подробным описанием всех товаров</p>
+                </div>
+                <div class="benefit-card__img">
+                  <picture>
+                    <source srcset="img/collar-com-b2b-benefit-02.webp,
+                                    img/collar-com-b2b-benefit-02.webp 2x" media="(min-width: 992px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-02.jpg,
+                                    img/collar-com-b2b-benefit-02.jpg 2x" media="(min-width: 992px)">
+                    <!-- 588x503, 1000x855 2x -->
+                    <source srcset="img/collar-com-b2b-benefit-02.webp,
+                                    img/collar-com-b2b-benefit-02.webp 2x" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-02.jpg,
+                                    img/collar-com-b2b-benefit-02.jpg 2x" media="(min-width: 768px)">
+                    <!-- 460x393, 920x786 2x -->
+                    <source srcset="img/collar-com-b2b-benefit-02.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-02.jpg" media="(min-width: 480px)">
+                    <!-- 1000x855 -->
+                    <source srcset="img/collar-com-b2b-benefit-02.webp" media="(min-width: 360px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-02.jpg" media="(min-width: 360px)">
+                    <!-- 448x383, 896x766 2x -->
+                    <img src="img/collar-com-b2b-benefit-02.jpg" alt="Text" width="1000" height="855" loading="lazy">
+                  </picture>
+                </div>
+              </article>
+            </li>
+            <li class="benefits-lp__item">
+              <article class="benefit-card">
+                <div class="benefit-card__header">
+                  <span class="benefit-card__idx">3</span>
+                  <h3 class="benefit-card__caption">Наличие и оперативность</h3>
+                  <p class="benefit-card__descr">Всегда актуальная информация об имеющейся продукции и цене на нее</p>
+                </div>
+                <div class="benefit-card__img">
+                  <picture>
+                    <source srcset="img/collar-com-b2b-benefit-03.webp,
+                                    img/collar-com-b2b-benefit-03.webp 2x" media="(min-width: 992px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-03.jpg,
+                                    img/collar-com-b2b-benefit-03.jpg 2x" media="(min-width: 992px)">
+                    <!-- 588x503, 1000x855 2x -->
+                    <source srcset="img/collar-com-b2b-benefit-03.webp,
+                                    img/collar-com-b2b-benefit-03.webp 2x" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-03.jpg,
+                                    img/collar-com-b2b-benefit-03.jpg 2x" media="(min-width: 768px)">
+                    <!-- 460x393, 920x786 2x -->
+                    <source srcset="img/collar-com-b2b-benefit-03.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-03.jpg" media="(min-width: 480px)">
+                    <!-- 1000x855 -->
+                    <source srcset="img/collar-com-b2b-benefit-03.webp" media="(min-width: 360px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-03.jpg" media="(min-width: 360px)">
+                    <!-- 448x383, 896x766 2x -->
+                    <img src="img/collar-com-b2b-benefit-03.jpg" alt="Text" width="1000" height="855" loading="lazy">
+                  </picture>
+                </div>
+              </article>
+            </li>
+            <li class="benefits-lp__item">
+              <article class="benefit-card">
+                <div class="benefit-card__header">
+                  <span class="benefit-card__idx">4</span>
+                  <h3 class="benefit-card__caption">Персональные скидки</h3>
+                  <p class="benefit-card__descr">Уникальные предложения именно для вашего бизнеса</p>
+                </div>
+                <div class="benefit-card__img">
+                  <picture>
+                    <source srcset="img/collar-com-b2b-benefit-04.webp,
+                                    img/collar-com-b2b-benefit-04.webp 2x" media="(min-width: 992px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-04.jpg,
+                                    img/collar-com-b2b-benefit-04.jpg 2x" media="(min-width: 992px)">
+                    <!-- 588x503, 1000x855 2x -->
+                    <source srcset="img/collar-com-b2b-benefit-04.webp,
+                                    img/collar-com-b2b-benefit-04.webp 2x" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-04.jpg,
+                                    img/collar-com-b2b-benefit-04.jpg 2x" media="(min-width: 768px)">
+                    <!-- 460x393, 920x786 2x -->
+                    <source srcset="img/collar-com-b2b-benefit-04.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-04.jpg" media="(min-width: 480px)">
+                    <!-- 1000x855 -->
+                    <source srcset="img/collar-com-b2b-benefit-04.webp" media="(min-width: 360px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-04.jpg" media="(min-width: 360px)">
+                    <!-- 448x383, 896x766 2x -->
+                    <img src="img/collar-com-b2b-benefit-04.jpg" alt="Text" width="1000" height="855" loading="lazy">
+                  </picture>
+                </div>
+              </article>
+            </li>
+            <li class="benefits-lp__item">
+              <article class="benefit-card">
+                <div class="benefit-card__header">
+                  <span class="benefit-card__idx">5</span>
+                  <h3 class="benefit-card__caption">Прайсы и xml выгрузки</h3>
+                  <p class="benefit-card__descr">Возможность создавать прайсы и xml выгрузки по вашим ценам для сайта</p>
+                </div>
+                <div class="benefit-card__img">
+                  <picture>
+                    <source srcset="img/collar-com-b2b-benefit-05.webp,
+                                    img/collar-com-b2b-benefit-05.webp 2x" media="(min-width: 992px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-05.jpg,
+                                    img/collar-com-b2b-benefit-05.jpg 2x" media="(min-width: 992px)">
+                    <!-- 588x503, 1000x855 2x -->
+                    <source srcset="img/collar-com-b2b-benefit-05.webp,
+                                    img/collar-com-b2b-benefit-05.webp 2x" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-05.jpg,
+                                    img/collar-com-b2b-benefit-05.jpg 2x" media="(min-width: 768px)">
+                    <!-- 460x393, 920x786 2x -->
+                    <source srcset="img/collar-com-b2b-benefit-05.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-05.jpg" media="(min-width: 480px)">
+                    <!-- 1000x855 -->
+                    <source srcset="img/collar-com-b2b-benefit-05.webp" media="(min-width: 360px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-05.jpg" media="(min-width: 360px)">
+                    <!-- 448x383, 896x766 2x -->
+                    <img src="img/collar-com-b2b-benefit-05.jpg" alt="Text" width="1000" height="855" loading="lazy">
+                  </picture>
+                </div>
+              </article>
+            </li>
+            <li class="benefits-lp__item">
+              <article class="benefit-card">
+                <div class="benefit-card__header">
+                  <span class="benefit-card__idx">6</span>
+                  <h3 class="benefit-card__caption">История и повторы</h3>
+                  <p class="benefit-card__descr">История заказов с возможностью скопировать и повторить заказ, чтобы сэкономить время</p>
+                </div>
+                <div class="benefit-card__img">
+                  <picture>
+                    <source srcset="img/collar-com-b2b-benefit-06.webp,
+                                    img/collar-com-b2b-benefit-06.webp 2x" media="(min-width: 992px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-06.jpg,
+                                    img/collar-com-b2b-benefit-06.jpg 2x" media="(min-width: 992px)">
+                    <!-- 588x503, 1000x855 2x -->
+                    <source srcset="img/collar-com-b2b-benefit-06.webp,
+                                    img/collar-com-b2b-benefit-06.webp 2x" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-06.jpg,
+                                    img/collar-com-b2b-benefit-06.jpg 2x" media="(min-width: 768px)">
+                    <!-- 460x393, 920x786 2x -->
+                    <source srcset="img/collar-com-b2b-benefit-06.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-06.jpg" media="(min-width: 480px)">
+                    <!-- 1000x855 -->
+                    <source srcset="img/collar-com-b2b-benefit-06.webp" media="(min-width: 360px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-06.jpg" media="(min-width: 360px)">
+                    <!-- 448x383, 896x766 2x -->
+                    <img src="img/collar-com-b2b-benefit-06.jpg" alt="Text" width="1000" height="855" loading="lazy">
+                  </picture>
+                </div>
+              </article>
+            </li>
+            <li class="benefits-lp__item">
+              <article class="benefit-card">
+                <div class="benefit-card__header">
+                  <span class="benefit-card__idx">7</span>
+                  <h3 class="benefit-card__caption">Доставка и дропшиппинг</h3>
+                  <p class="benefit-card__descr">Доставка заказа самым удобным для вас способом или же сразу прямая доставка конечному клиенту</p>
+                </div>
+                <div class="benefit-card__img">
+                  <picture>
+                    <source srcset="img/collar-com-b2b-benefit-07.webp,
+                                    img/collar-com-b2b-benefit-07.webp 2x" media="(min-width: 992px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-07.jpg,
+                                    img/collar-com-b2b-benefit-07.jpg 2x" media="(min-width: 992px)">
+                    <!-- 588x503, 1000x855 2x -->
+                    <source srcset="img/collar-com-b2b-benefit-07.webp,
+                                    img/collar-com-b2b-benefit-07.webp 2x" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-07.jpg,
+                                    img/collar-com-b2b-benefit-07.jpg 2x" media="(min-width: 768px)">
+                    <!-- 460x393, 920x786 2x -->
+                    <source srcset="img/collar-com-b2b-benefit-07.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-07.jpg" media="(min-width: 480px)">
+                    <!-- 1000x855 -->
+                    <source srcset="img/collar-com-b2b-benefit-07.webp" media="(min-width: 360px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-07.jpg" media="(min-width: 360px)">
+                    <!-- 448x383, 896x766 2x -->
+                    <img src="img/collar-com-b2b-benefit-07.jpg" alt="Text" width="1000" height="855" loading="lazy">
+                  </picture>
+                </div>
+              </article>
+            </li>
+            <li class="benefits-lp__item">
+              <article class="benefit-card">
+                <div class="benefit-card__header">
+                  <span class="benefit-card__idx">8</span>
+                  <h3 class="benefit-card__caption">Другие функции</h3>
+                  <p class="benefit-card__descr">Оформление возвратов, полная история взаиморасчетов, сообщения и т.д.</p>
+                </div>
+                <div class="benefit-card__img">
+                  <picture>
+                    <source srcset="img/collar-com-b2b-benefit-08.webp,
+                                    img/collar-com-b2b-benefit-08.webp 2x" media="(min-width: 992px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-08.jpg,
+                                    img/collar-com-b2b-benefit-08.jpg 2x" media="(min-width: 992px)">
+                    <!-- 588x503, 1000x855 2x -->
+                    <source srcset="img/collar-com-b2b-benefit-08.webp,
+                                    img/collar-com-b2b-benefit-08.webp 2x" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-08.jpg,
+                                    img/collar-com-b2b-benefit-08.jpg 2x" media="(min-width: 768px)">
+                    <!-- 460x393, 920x786 2x -->
+                    <source srcset="img/collar-com-b2b-benefit-08.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-08.jpg" media="(min-width: 480px)">
+                    <!-- 1000x855 -->
+                    <source srcset="img/collar-com-b2b-benefit-08.webp" media="(min-width: 360px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-08.jpg" media="(min-width: 360px)">
+                    <!-- 448x383, 896x766 2x -->
+                    <img src="img/collar-com-b2b-benefit-08.jpg" alt="Text" width="1000" height="855" loading="lazy">
+                  </picture>
+                </div>
+              </article>
+            </li>
+            <li class="benefits-lp__item">
+              <article class="benefit-card">
+                <div class="benefit-card__header">
+                  <span class="benefit-card__idx">9</span>
+                  <h3 class="benefit-card__caption">Прямая гарантия от производителя</h3>
+                  <p class="benefit-card__descr">Продавец получает защиту от рисков, а конечный потребитель – консультацию, обмен или возврат продукции</p>
+                </div>
+                <div class="benefit-card__img">
+                  <picture>
+                    <source srcset="img/collar-com-b2b-benefit-09.webp,
+                                    img/collar-com-b2b-benefit-09.webp 2x" media="(min-width: 992px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-09.jpg,
+                                    img/collar-com-b2b-benefit-09.jpg 2x" media="(min-width: 992px)">
+                    <!-- 588x503, 1000x855 2x -->
+                    <source srcset="img/collar-com-b2b-benefit-09.webp,
+                                    img/collar-com-b2b-benefit-09.webp 2x" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-09.jpg,
+                                    img/collar-com-b2b-benefit-09.jpg 2x" media="(min-width: 768px)">
+                    <!-- 460x393, 920x786 2x -->
+                    <source srcset="img/collar-com-b2b-benefit-09.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-09.jpg" media="(min-width: 480px)">
+                    <!-- 1000x855 -->
+                    <source srcset="img/collar-com-b2b-benefit-09.webp" media="(min-width: 360px)" type="image/webp">
+                    <source srcset="img/collar-com-b2b-benefit-09.jpg" media="(min-width: 360px)">
+                    <!-- 448x383, 896x766 2x -->
+                    <img src="img/collar-com-b2b-benefit-09.jpg" alt="Text" width="1000" height="855" loading="lazy">
+                  </picture>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <div class="page__footer-wrapper">
+      <!--DEV
+      @ @include('blocks/page-footer/page-footer.html')
+      -->
+      <footer class="container  page-footer">
+        <div class="row   page-footer__inner">
+          <div class="page-footer__logo-col">
+            <a href="index.html" class="logo" title="Collar company">
+              <img src="img/collar-logo.svg" width="63" height="56" alt="Collar logo">
+            </a>
+            <div class="page-footer__block-wrapper  page-footer__block-wrapper--info">
+              <p class="page-footer__text-info">Дополнительная информация</p>
+              <a href="https://www.collar.com" class="page-footer__link  page-footer__link--url" target="_blank" rel="nofollow noopener">www.collar.com</a>
+              <!--DEV
+              @ @include('blocks/social-link-lp/social-link-lp.html')
+              -->
+              <section class="social-link-lp">
+                <h4 class="visually-hidden">Наши контакты в социальных сетях (Our social media contacts)</h4>
+                <ul class="list-nostyled  social-link-lp__list">
+                  <li class="social-link-lp__item">
+                    <a href="#" class="social-link-lp__link" title="Facebook" target="_blank" rel="nofollow noopener">
+                      <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook"/></svg>
+                    </a>
+                  </li>
+                  <li class="social-link-lp__item">
+                    <a href="#" class="social-link-lp__link" title="Linkedin" target="_blank" rel="nofollow noopener">
+                      <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#linkedin"/></svg>
+                    </a>
+                  </li>
+                  <li class="social-link-lp__item">
+                    <a href="#" class="social-link-lp__link" title="Instagram" target="_blank" rel="nofollow noopener">
+                      <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#instagram"/></svg>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div class="page-footer__tel-col">
+            <div class="page-footer__block-wrapper  page-footer__block-wrapper--tel">
+              <p class="page-footer__text-info">Номер горячей линии</p>
+              <a href="tel:+380800301977" class="page-footer__link  page-footer__link--url">+38 0 800 30 19 77</a>
+            </div>
+          </div>
+          <div class="page-footer__btn-col">
+            <a href="#" class="btn  btn--red">Войти в аккаунт</a>
+          </div>
+        </div>
+        <div class="page-footer__add-info">
+          <!--DEV
+          @ @include('blocks/legal-info/legal-info.html')
+          -->
+          <section class="legal-info">
+            <h4 class="visually-hidden">
+              Legal and other useful information for the site user /
+              Правовая и другая полезная информация для пользователя сайта
+            </h4>
+            <ul class="list-nostyled  legal-info__list">
+              <li class="legal-info__item">
+                <a href="#" class="legal-info__link">Условия использования сайта</a>
+              </li>
+              <li class="legal-info__item">
+                <a href="#" class="legal-info__link">Обработка персональных данных</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade  video-modal" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-titl  visually-hidden" id="videoModalLabel">Modal title</h4>
+          <!-- <button type="button" class="video-modal__close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body">
+          <div class="embed-responsive" id="ytplayer">
+            <!-- <iframe title="Название видеоролика" src="https://www.youtube.com/embed/_CWnH5K4wsI?autoplay=1&autohide=1" allow="accelerometer; autoplay;" allowfullscreen="" width="640" height="360"></iframe> -->
+            <iframe id="player" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/_CWnH5K4wsI?enablejsapi=1" allow="accelerometer; autoplay;" frameborder="0" allowfullscreen></iframe>
+            <script>
+              // Load the IFrame Player API code asynchronously.
+              var tag = document.createElement('script');
+              tag.src = "https://www.youtube.com/player_api";
+              var firstScriptTag = document.getElementsByTagName('script')[0];
+              firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+              // Replace the 'ytplayer' element with an <iframe> and
+              // YouTube player after the API code downloads.
+              var player;
+              function onYouTubePlayerAPIReady() {
+                player = new YT.Player('player', {
+                  // height: '360',
+                  // width: '640',
+                  // videoId: '_CWnH5K4wsI',
+                  // origin: 'http://localhost:3000/index.html',
+                  events: {
+                    'onReady': onPlayerReady,
+                  }
+                });
+              }
+              function onPlayerReady(event) {
+                event.target.playVideo();
+              }
+              const videoModal = document.querySelector('#videoModal');
+              videoModal.addEventListener('shown.bs.modal', evt => {
+                //console.log('Modal is opened now: ');
+                document.getElementById('player').contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+              })
+              videoModal.addEventListener('hide.bs.modal', evt => {
+                //console.log('Modal is closed now: ');
+                document.getElementById('player').contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+              })
+              // '*' - origin ( https://site.com/ )
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script> -->
+  <script src="js/script.min.js"></script>
+</body>
+</html>
