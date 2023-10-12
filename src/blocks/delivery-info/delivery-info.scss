@@ -1,9 +1,13 @@
 .delivery-info {
-  display: inline-flex;
-  align-items: center;
-  gap: 0 8px;
+  display: none;
 
   $block-name:                &; // #{$block-name}__element
+
+  @media (min-width: $screen-md) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0 8px;
+  }
 
   &__text {
     display: block;
