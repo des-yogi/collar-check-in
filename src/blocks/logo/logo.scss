@@ -12,24 +12,32 @@
   }
 
   &__wrapper {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    //width: 100%;
+    flex: 0 0 63px;
 
     @media (min-width: $screen-md) {
-      display: inline-flex;
+      //display: flex;
+      flex: 0 0 auto;
       width: auto;
+    }
+
+    @media (min-width: $screen-md) and (max-width: $screen-xl) {
+      margin-bottom: 24px;
     }
   }
 
   &__slogan {
-    margin-top: 0 !important;
-    margin-left: 40px;
-    text-align: right;
-    text-transform: uppercase;
+    display: none;
 
     @media (min-width: $screen-md) {
+      display: block;
+      margin-top: 0 !important;
+      margin-left: 40px;
+      text-align: right;
+      text-transform: uppercase;
       text-align: inherit;
     }
 
