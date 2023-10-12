@@ -11,10 +11,9 @@
     justify-content: space-between;
     gap: 0 24px;
 
-    @media (min-width: $screen-md) and (max-width: $screen-xl) {
-      //flex-direction: initial;
-      flex-direction: column;
-    }
+    // @media (min-width: $screen-md) and (max-width: $screen-xl) {
+    //   flex-direction: column;
+    // }
   }
 
   &__user-menu {
@@ -31,13 +30,17 @@
       justify-content: flex-end;
     }
 
-    @media (min-width: $screen-xl) {
+    @media (min-width: $screen-md) {
       flex: 0 1 auto;
       flex-wrap: nowrap;
-      gap: 24px 40px;
+      gap: 24px;
       width: auto;
       //margin-top: 0;
       //margin-left: 40px;
+    }
+
+    @media (min-width: $screen-xl) {
+      gap: 24px 40px;
     }
 
     .delivery-info,
@@ -63,7 +66,7 @@
 
   &__login-text {
 
-    @media (max-width: $screen-md - 1) {
+    @media (max-width: $screen-xl - 1) {
       display: none;
     }
   }
