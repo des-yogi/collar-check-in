@@ -24,7 +24,9 @@
     "legal-info": [],
     "check-in-form": [],
     "benefit-card": [],
-    "page-404": []
+    "page-404": [],
+    "table": [],
+    "table-mobile-scroll": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

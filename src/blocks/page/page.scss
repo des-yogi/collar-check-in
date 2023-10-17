@@ -377,6 +377,27 @@ a {
   background-color: $body-bg;
 }
 
+.text-page {
+  padding-top: 72px;
+  padding-bottom: 72px;
+
+  @media (min-width: $screen-md) {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding-top: 108px;
+    padding-bottom: 108px;
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 8);
+  }
+}
+
  // <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#burger"></use></svg>
 
 // @include col(xs, 12);
