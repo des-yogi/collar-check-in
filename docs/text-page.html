@@ -3,21 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>Article page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  <meta name="MobileOptimized" content="320">  <!--DEV Edge и ряд мобильных браузеров автоматом преобразуют телефоны в ссылки. Отключим это. -->  <meta name="format-detection" content="telephone=no">  <meta name="format-detection" content="date=no">  <meta name="format-detection" content="address=no">  <meta name="format-detection" content="email=no">  <meta name="description" content>  <meta name="keywords" content>  <meta name="robots" content="index,follow">  <!-- OpenGraph microdata  <meta property="og:url"      content="https://www.your-domain.com/your-page.html" />  <meta property="og:type"          content="website" />  <meta property="og:title"         content="Your Website Title" />  <meta property="og:description"   content="Your description" />  <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />  <meta property="og:locale"        content="uk_UA" />  -->  <!-- <link rel="canonical" href="https://www.your-domain.com/"> -->  <!-- <link rel="preload" href="assets/fonts/roboto-v18-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin>  <link rel="preload" href="assets/fonts/roboto-v18-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>  <link rel="preload" href="assets/fonts/noto-sans-v7-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin> -->  <link href="css/style.min.css" rel="stylesheet" media="screen"><link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-<link rel="manifest" href="/img/site.webmanifest">
-<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
-<link rel="shortcut icon" href="/img/favicon.ico">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-config" content="/img/browserconfig.xml">
-<meta name="theme-color" content="#ffffff"></head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  <meta name="MobileOptimized" content="320">  <!--DEV Edge и ряд мобильных браузеров автоматом преобразуют телефоны в ссылки. Отключим это. -->  <meta name="format-detection" content="telephone=no">  <meta name="format-detection" content="date=no">  <meta name="format-detection" content="address=no">  <meta name="format-detection" content="email=no">  <meta name="description" content>  <meta name="keywords" content>  <meta name="robots" content="index,follow">  <!-- OpenGraph microdata  <meta property="og:url"      content="https://www.your-domain.com/your-page.html" />  <meta property="og:type"          content="website" />  <meta property="og:title"         content="Your Website Title" />  <meta property="og:description"   content="Your description" />  <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />  <meta property="og:locale"        content="uk_UA" />  -->  <!-- <link rel="canonical" href="https://www.your-domain.com/"> -->  <!-- <link rel="preload" href="assets/fonts/roboto-v18-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin>  <link rel="preload" href="assets/fonts/roboto-v18-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>  <link rel="preload" href="assets/fonts/noto-sans-v7-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin> -->  <link href="css/style.min.css" rel="stylesheet" media="screen"><link rel="icon" type="image/png" href="/imgfavicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/imgfavicon.svg">
+<link rel="shortcut icon" href="/imgfavicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/imgapple-touch-icon.png">
+<link rel="manifest" href="/imgsite.webmanifest"></head>
 <body>
 <noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
   <div class="page__inner">
-    <div class="page__content">      <header class="container  page-header">        <div class="page-header__inner">          <!--DEV
-          @ @include('blocks/logo/logo.html')
-          -->
+    <div class="page__content">
+      <header class="container  page-header">
+        <div class="page-header__inner">
           <div class="logo__wrapper">
             <a href="index.html" class="logo" title="Collar company">
               <img src="img/collar-logo.svg" width="63" height="56" alt="Collar logo">
@@ -27,7 +23,26 @@
               and people happy
             </p>
           </div>
-          <div class="page-header__user-menu">            <!--DEV            @ @include('blocks/delivery-info/delivery-info.html')            -->            <div class="delivery-info">              <svg width="32" height="32" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#globe"/></svg>              <span class="delivery-info__text">                Доставка по всему миру              </span>            </div>            <!--DEV            @ @include('blocks/hot-line-link/hot-line-link.html')            -->            <a href="tel:+0800300740" class="hot-line-link">              <span class="hot-line-link__text">Номер горячей линии</span>              <span class="hot-line-link__num">0 800 300 740</span>            </a>            <!--DEV            @ @include('blocks/lang-switcher/lang-switcher.html')            -->            <div class="dropdown-center  lang-switcher">              <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,-1">                Ru              </button>              <ul class="dropdown-menu">                <li class="active"><a class="dropdown-item">Ru</a></li>                <li><a class="dropdown-item" href="#">En</a></li>                <li><a class="dropdown-item" href="#">Pl</a></li>              </ul>            </div>            <a href="#" class="btn  btn--red  page-header__login">              <span>Войти <span class="page-header__login-text">в аккаунт</span></span>            </a>          </div>        </div>      </header>      <main>
+          <div class="page-header__user-menu">            <div class="delivery-info">              <svg width="32" height="32" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#globe"/></svg>              <span class="delivery-info__text">                Доставка по всему миру              </span>            </div>            <!--DEV            @ @include('blocks/hot-line-link/hot-line-link.html')            -->            <a href="tel:+0800300740" class="hot-line-link">              <span class="hot-line-link__text">Номер горячей линии</span>              <span class="hot-line-link__num">0 800 300 740</span>            </a>            <!--DEV
+            @ @include('blocks/lang-switcher/lang-switcher.html')
+            -->
+            <div class="dropdown-center  lang-switcher">
+              <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,-1">
+                Pol
+              </button>
+              <ul class="dropdown-menu">
+                <li class="active"><a class="dropdown-item">Rus</a></li>
+                <li><a class="dropdown-item" href="#">Eng</a></li>
+                <li><a class="dropdown-item" href="#">Pol</a></li>
+              </ul>
+            </div>
+            <a href="#" class="btn  btn--red  page-header__login">
+              <span>Zaloguj się<span class="page-header__login-text">в аккаунт</span></span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <main>
         <article class="container  text-page">
           <div class="row">
             <div class="text-page__col">
@@ -46,51 +61,51 @@
                 <h4>H4</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
+                <table>
+                  <caption>Таблица</caption>
+                  <tbody>
+                    <tr>
+                      <th>Имя</th>
+                      <th>Фамилия</th>
+                      <th>Мыло</th>
+                      <th>Статус</th>
+                      <th>Политическая ориентация</th>
+                    </tr>
+                    <tr>
+                      <td>Иннокентий</td>
+                      <td>Барлаухенштицкен-Ламанческий</td>
+                      <td>Хозяйственное</td>
+                      <td>Администратор</td>
+                      <td>«ВСЕГДА!»</td>
+                    </tr>
+                    <tr>
+                      <td>Васисуалий</td>
+                      <td>Пылепневмомешковыколачивателев</td>
+                      <td>Душистое</td>
+                      <td>Юзверь</td>
+                      <td>Нижняя</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul>
+                  <li>List Item 01</li>
+                  <li>List Item 02</li>
+                  <li>List Item 03</li>
+                  <li>List Item 04</li>
+                  <li>List Item 05</li>
+                </ul>
+                <ol>
+                  <li>List Item 01</li>
+                  <li>List Item 02</li>
+                  <li>List Item 03</li>
+                  <li>List Item 04</li>
+                  <li>List Item 05</li>
+                </ol>
+                <h5>H5</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
+                <h6>H6</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
               </div>
-              <table>
-                <caption>Таблица</caption>
-                <tbody>
-                  <tr>
-                    <th>Имя</th>
-                    <th>Фамилия</th>
-                    <th>Мыло</th>
-                    <th>Статус</th>
-                    <th>Политическая ориентация</th>
-                  </tr>
-                  <tr>
-                    <td>Иннокентий</td>
-                    <td>Барлаухенштицкен-Ламанческий</td>
-                    <td>Хозяйственное</td>
-                    <td>Администратор</td>
-                    <td>«ВСЕГДА!»</td>
-                  </tr>
-                  <tr>
-                    <td>Васисуалий</td>
-                    <td>Пылепневмомешковыколачивателев</td>
-                    <td>Душистое</td>
-                    <td>Юзверь</td>
-                    <td>Нижняя</td>
-                  </tr>
-                </tbody>
-              </table>
-              <ul>
-                <li>List Item 01</li>
-                <li>List Item 02</li>
-                <li>List Item 03</li>
-                <li>List Item 04</li>
-                <li>List Item 05</li>
-              </ul>
-              <ol>
-                <li>List Item 01</li>
-                <li>List Item 02</li>
-                <li>List Item 03</li>
-                <li>List Item 04</li>
-                <li>List Item 05</li>
-              </ol>
-              <h5>H5</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
-              <h6>H6</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
             </div>
           </div>
         </article>

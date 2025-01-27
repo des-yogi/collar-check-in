@@ -16,7 +16,7 @@
 
   .dropdown-toggle {
     height: 56px;
-    padding: 0 16px;
+    padding: 0 10px;
     font-family: $font-family;
     font-size: $font-size;
     font-weight: 600;
@@ -47,7 +47,7 @@
       content: "";
       width: 24px;
       height: 24px;
-      margin-left: 12px;
+      margin-left: 8px;
       transform: rotate(90deg);
       background-image: svg-load('../blocks/sprite-svg/svg/chevron-right.svg', fill=$text-color);
       background-repeat: no-repeat;
