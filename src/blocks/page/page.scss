@@ -16,7 +16,7 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -ms-overflow-style: scrollbar;
   -ms-text-size-adjust: 100%; // stylelint-disable-line  property-no-vendor-prefix
-  min-width: 360px;
+  min-width: 320px;
   min-height: 100%;
   scroll-behavior: smooth;
 
@@ -249,8 +249,8 @@ a {
 .container {
   display: block;
   width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
   background: none;
 
   @media (min-width: $screen-md) {
